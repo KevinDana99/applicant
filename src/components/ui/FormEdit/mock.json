@@ -1,0 +1,110 @@
+{
+  "contact": {
+    "fullName": "Kevin Emanuel Dana",
+    "professionalTitle": "Senior Frontend Developer",
+    "email": "kevindanadev@gmail.com",
+    "phone": "+54 280 467-0313",
+    "linkedin": "linkedin.com/in/kevindana",
+    "location": "Puerto Madryn, Chubut, Argentina",
+    "website": "https://aionagencia.com"
+  },
+  "summary": "Ingeniero de software con mas de 5 anos de experiencia en desarrollo frontend y full-stack. Especializado en React, Next.js y Node.js, con historial comprobado de liderar equipos tecnicos y entregar productos escalables. Enfocado en rendimiento, arquitectura limpia y mejores practicas de desarrollo.",
+  "experiences": [
+    {
+      "id": "exp-1",
+      "jobTitle": "Senior Frontend Developer",
+      "company": "Google",
+      "location": "San Francisco, CA",
+      "startDate": "2024-02",
+      "endDate": "",
+      "current": true,
+      "achievements": [
+        "Lidere un equipo de 5 desarrolladores frontend en la migracion de una aplicacion legacy a React 19 con Server Components",
+        "Reduje el Time to Interactive (TTI) en un 42% mediante code splitting, lazy loading y optimizacion de bundle con Webpack 5",
+        "Implemente un sistema de diseno compartido con 60+ componentes reutilizables que redujo el tiempo de desarrollo de features en un 30%",
+        "Disene e implemente pipelines de CI/CD con GitHub Actions que automatizaron testing, linting y despliegue a produccion",
+        "Estableci estandares de codigo y guias de contribucion que mejoraron la consistencia del codigo base en un 85%",
+        "Integre servicios de monitoreo (Datadog, Sentry) para observabilidad en produccion, reduciendo el MTTR en un 50%"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "jobTitle": "Tech Lead Frontend",
+      "company": "Amazon",
+      "location": "Nueva York, NY",
+      "startDate": "2019-02",
+      "endDate": "2024-03",
+      "current": false,
+      "achievements": [
+        "Reconstrui desde cero la plataforma de gestion de pedidos con Next.js, incrementando la velocidad de carga inicial en un 60%",
+        "Implemente estrategias de data fetching con SWR y React Query que redujeron las llamadas API redundantes en un 45%",
+        "Lidere la migracion de JavaScript a TypeScript en un codigo base de 200K+ lineas, eliminando el 70% de errores en tiempo de ejecucion",
+        "Colabore con equipos de backend y UX para definir contratos API REST y GraphQL, mejorando la integracion entre servicios",
+        "Mentorice a 4 desarrolladores junior, acelerando su ramp-up y promoviendo a 2 de ellos a nivel Mid en 12 meses"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "Secundario / Bachiller en Cs. Sociales",
+      "fieldOfStudy": "Economia y Gestion",
+      "institution": "Colegio 70777",
+      "location": "Puerto Madryn, Chubut",
+      "startDate": "2012-02",
+      "endDate": "2021-12",
+      "gpa": "",
+      "honors": ""
+    }
+  ],
+  "technicalSkills": "JavaScript, TypeScript, React, Next.js, Node.js, Express, HTML5, CSS3, Tailwind CSS, PostgreSQL, MongoDB, Firebase, Redis, Docker, AWS (S3, Lambda, EC2), Git, GitHub Actions, Jest, Cypress, React Native, GraphQL, REST APIs, Webpack, Vite",
+  "softSkills": "Liderazgo de equipos tecnicos, comunicacion efectiva, mentoria, resolucion de problemas, pensamiento analitico, gestion de proyectos Agile/Scrum, toma de decisiones arquitectonicas",
+  "certifications": [
+    {
+      "id": "cert-1",
+      "name": "Meta Front-End Developer Professional Certificate",
+      "issuer": "Meta (Coursera)",
+      "date": "2023-06",
+      "url": "https://coursera.org/verify/professional-cert/meta-frontend"
+    },
+    {
+      "id": "cert-2",
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "2022-11",
+      "url": "https://aws.amazon.com/verification"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Aion Agencia",
+      "description": "Plataforma integral de creacion de sitios web y aplicaciones para pymes. Incluye panel de administracion, editor drag-and-drop, hosting automatizado y sistema de pagos con Mercado Pago. Mas de 50 clientes activos.",
+      "technologies": "React, Next.js, Node.js, Express, PostgreSQL, Stripe, Mercado Pago, Vercel, Docker",
+      "url": "https://aionagencia.com",
+      "startDate": "2019-01",
+      "endDate": ""
+    },
+    {
+      "id": "proj-2",
+      "name": "TaskFlow - Gestor de Proyectos",
+      "description": "Aplicacion de gestion de proyectos tipo Trello con tableros Kanban, asignacion de tareas, notificaciones en tiempo real con WebSockets y reportes de productividad.",
+      "technologies": "Next.js, TypeScript, Prisma, PostgreSQL, Socket.io, Tailwind CSS, Zustand",
+      "url": "https://github.com/kevindana/taskflow",
+      "startDate": "2023-03",
+      "endDate": "2023-10"
+    }
+  ],
+  "languages": [
+    {
+      "id": "lang-1",
+      "language": "Espanol",
+      "proficiency": "Nativo"
+    },
+    {
+      "id": "lang-2",
+      "language": "Ingles",
+      "proficiency": "Intermedio Alto"
+    }
+  ]
+}
