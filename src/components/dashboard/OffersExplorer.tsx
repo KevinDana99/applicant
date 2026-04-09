@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import {
   Badge,
+  Button,
   Card,
   Group,
   Input,
@@ -72,7 +73,7 @@ export function OffersExplorer() {
               Busqueda unificada de roles tech en espanol con foco en relacion de dependencia.
             </Text>
           </div>
-          <Badge color='teal' variant='light' radius='xl' size='lg'>
+          <Badge color='indigo' variant='light' radius='xl' size='lg'>
             {filteredOffers.length} resultados
           </Badge>
         </Group>
@@ -155,7 +156,7 @@ export function OffersExplorer() {
               </Group>
 
               <Group gap='xs' mt='md'>
-                <Badge color='teal' variant='light'>
+                <Badge color='indigo' variant='light'>
                   {platform?.name}
                 </Badge>
                 <Badge color='lime' variant='light'>
@@ -180,9 +181,19 @@ export function OffersExplorer() {
                 <Text size='sm' c='dimmed'>
                   Publicada: {offer.postedAt}
                 </Text>
-                <Text size='sm' fw={600}>
-                  {platform?.region}
-                </Text>
+                <Group gap='sm'>
+                  <Text size='sm' fw={600}>
+                    {platform?.region}
+                  </Text>
+                  <Button
+                    size='sm'
+                    color='indigo'
+                    variant='light'
+                    onClick={() => alert(`Solicitud enviada para ${offer.title} en ${offer.company}`)}
+                  >
+                    Enviar solicitud
+                  </Button>
+                </Group>
               </Group>
             </Card>
           )

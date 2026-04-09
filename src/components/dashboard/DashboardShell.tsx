@@ -13,8 +13,10 @@ import {
   NavLink,
   ScrollArea,
   Stack,
+  Switch,
   Text,
-  ThemeIcon
+  ThemeIcon,
+  useMantineColorScheme
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { offers, platforms } from './data'
@@ -49,6 +51,7 @@ export function DashboardShell({
 }) {
   const pathname = usePathname()
   const [opened, { toggle }] = useDisclosure(false)
+  const { colorScheme, setColorScheme } = useMantineColorScheme()
 
   return (
     <AppShell
@@ -64,7 +67,7 @@ export function DashboardShell({
           background: 'transparent'
         },
         header: {
-          background: 'rgba(251, 248, 241, 0.9)',
+          background: 'var(--panel-bg)',
           borderBottom: '1px solid var(--border)',
           backdropFilter: 'blur(14px)'
         },
@@ -94,12 +97,19 @@ export function DashboardShell({
             </Stack>
           </Group>
           <Group gap='sm' visibleFrom='sm'>
-            <Badge color='teal' variant='light' radius='xl'>
+            <Badge color='indigo' variant='light' radius='xl'>
               {platforms.length} plataformas activas
             </Badge>
             <Badge color='dark' variant='outline' radius='xl'>
               {offers.length} ofertas normalizadas
             </Badge>
+            <Switch
+              checked={colorScheme === 'dark'}
+              onChange={(event) => setColorScheme(event.currentTarget.checked ? 'dark' : 'light')}
+              size="md"
+              onLabel="🌙"
+              offLabel="☀️"
+            />
           </Group>
         </Group>
       </AppShell.Header>
@@ -117,14 +127,14 @@ export function DashboardShell({
         >
           <Group justify='space-between' align='flex-start'>
             <div>
-              <Text fw={800} size='sm' tt='uppercase' c='teal.8'>
+              <Text fw={800} size='sm' tt='uppercase' c='indigo.8'>
                 Hiring OS
               </Text>
               <Text fw={700} size='xl' mt={6}>
                 Stack dev en relacion de dependencia
               </Text>
             </div>
-            <ThemeIcon color='teal' radius='xl' size='lg' variant='light'>
+            <ThemeIcon color='indigo' radius='xl' size='lg' variant='light'>
               IT
             </ThemeIcon>
           </Group>
@@ -150,7 +160,7 @@ export function DashboardShell({
                   label={item.label}
                   description={item.description}
                   variant='filled'
-                  color='teal'
+                  color='indigo'
                   styles={{
                     root: {
                       borderRadius: 18
@@ -171,9 +181,9 @@ export function DashboardShell({
           <Box
             p='md'
             style={{
-              background: 'rgba(220, 239, 231, 0.85)',
+              background: 'var(--accent-soft)',
               borderRadius: 22,
-              border: '1px solid rgba(23, 98, 74, 0.14)'
+              border: '1px solid var(--border)'
             }}
           >
             <Text fw={700}>Cobertura actual</Text>
@@ -181,13 +191,13 @@ export function DashboardShell({
               IT/Tech especifico y generalistas con fuerte seccion dev en espanol.
             </Text>
             <Group gap='xs' mt='md'>
-              <Badge variant='white' color='teal'>
+              <Badge variant='light' color='indigo'>
                 Remoto
               </Badge>
-              <Badge variant='white' color='lime'>
+              <Badge variant='light' color='lime'>
                 Hibrido
               </Badge>
-              <Badge variant='white' color='gray'>
+              <Badge variant='light' color='gray'>
                 Presencial
               </Badge>
             </Group>
@@ -197,7 +207,7 @@ export function DashboardShell({
               fullWidth
               mt='lg'
               radius='xl'
-              color='teal'
+              color='indigo'
             >
               Explorar ofertas
             </Button>
